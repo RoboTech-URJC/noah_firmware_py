@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>noah_firmware_py</name>
+  <version>0.0.1</version>
+  <description>noah_firmware_py</description>
+  <maintainer email="jginesclavero@gmail.com">Jonatan Gines</maintainer>
+  <author email="jginesclavero@gmail.com">Jonatan Gines</author>
+
+  <license>BSD</license>
+
+  <depend>example_interfaces</depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!--doc_depend>python3-sphinx</doc_depend>
+  <doc_depend>python-sphinx-autoapi-pip</doc_depend>
+  <doc_depend>python-sphinx-rtd-theme-pip</doc_depend>
+  <doc_depend>python3-yaml</doc_depend-->
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_xmllint</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
