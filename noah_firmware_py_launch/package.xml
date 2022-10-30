@@ -10,9 +10,8 @@
   <license>BSD</license>
 
   <author email="jginesclavero@gmail.com">Jonatan Gines</author>
-
+  
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>ament_index_cpp</depend>
   <build_depend>launch_ros</build_depend>
   
   <exec_depend>launch_ros</exec_depend>

@@ -7,12 +7,10 @@ set(CMAKE_BUILD_TYPE DEBUG)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(ament_index_cpp REQUIRED)
 
 set(dependencies
     rclcpp
     rclpy
-    ament_index_cpp
 )
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
