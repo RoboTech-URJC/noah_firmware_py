@@ -20,10 +20,10 @@ def generate_launch_description():
     """generate_launch_description."""
     # Configure environment
     stdout_linebuf_envvar = SetEnvironmentVariable(
-        'RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED',
+        'RCUTILS_LOGGING_BUFFERED_STREAM',
         '1')
-    stdout_colorized_envvar = SetEnvironmentVariable(
-        'RCUTILS_COLORIZED_OUTPUT',
+    stdout_use_stdout_envvar = SetEnvironmentVariable(
+        'RCUTILS_LOGGING_USE_STDOUT',
         '1')
 
     # Node Configurations
@@ -48,7 +48,7 @@ def generate_launch_description():
     ld = LaunchDescription()
     # Set environment variables
     ld.add_action(stdout_linebuf_envvar)
-    ld.add_action(stdout_colorized_envvar)
+    ld.add_action(stdout_use_stdout_envvar)
     ld.add_action(declare_config_file_cmd)
     # Add nodes
     ld.add_action(noah_firmware_node)
